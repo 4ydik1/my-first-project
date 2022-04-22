@@ -12,6 +12,7 @@ int main()
         char surname[20];
         int group;
         char patronymic[20];
+        char hobbie[50];
     }ST;
 
     int k;
@@ -29,7 +30,8 @@ int main()
         cin >> students[i].patronymic;
         cout << "Введіть групу студента: ";
         cin >> students[i].group;
-        
+        cout << "Введіть хоббі студента: ";
+        cin >> students[i].hobbie;
     }
 
     for (int i = 0; i < k; i++) {
@@ -38,6 +40,7 @@ int main()
         cout << "Фамілія студента: " << students[i].surname << endl;
         cout << "По батькові студента: " << students[i].patronymic << endl;
         cout << "Група студента: " << students[i].group << endl;
+        cout << "хоббі студента: " << students[i].hobbie << endl;
     }
     
 }
